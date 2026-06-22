@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario Ipec</title>
+
+        <!-- llamado a la hoja de estilo-->>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Instituto Profesional de Educacion Comunitaria</h1>
+            <p>Formulario de prematrícula</p>
+        </header>
+
+        <div class="contenedor">
+            <h2>Registro de Solicitud</h2>
+
+            <form id="formulario">
+
+                <fieldset>
+                    <legend>1. Datos del estudiante</legend>
+
+                        <div class ="fila">
+                            <div class="grupo">
+                                <label for="nombre">Nombre Completo</label>
+                                <input type="text" id="nombre" placeholder="Digite el nombre completo">
+                            </div>
+
+                        <div class="grupo">
+                                <label for="nivel">Sexo</label>
+                                <select id="nivel">
+                                    <option value="">Seleccione una opcion</option>
+                                    <option value="Masculino">Masculino</option>
+                                    <option value="Femenino">Femenino</option>
+                                </select>
+                            </div>
+
+                            <div class="grupo">
+                                <label for="identificacion">Identificación</label>
+                                <input type="text" id="identificacion"placeholder="Ejemplo: 1-2345-6790">
+                            </div>
+                        </div>
+
+                            <div class="fila">
+                                <div class="grupo">
+                                    <label for="edad">Edad:</label>
+                                    <input type="number" id="edad" min="5" max="80" placeholder="Digite la edad">
+                            </div>
+
+                        <div class="contenedor-fecha">
+                        <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                        <input type="date" id="fechaNacimiento" name="fechaNacimiento">
+                        </div>
+
+                            <div class="grupo">
+                                <label for="nivel">Nivel Educativo</label>
+                                <select id="nivel">
+                                    <option value="">Seleccione una opcion</option>
+                                    <option value="Primaria">Primaria</option>
+                                    <option value="Septimo año">Septimo año</option>
+                                    <option value="Octavo año">Octavo año</option>
+                                    <option value="Noveno año">Noveno año</option>
+                                    <option value="Decimo año">Decimo año</option>
+                                    <option value="Undecimo año">Undecimo año</option>
+                                    ><option value="Educación de adultos">Educación de Adultos</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="fila">
+                            <div class ="grupo">
+                                <label for ="correo">Correo Electónico</label>
+                                <input type="text" id="seccion" placeholder="correo@email.com">
+                            </div>
+
+                        <div class ="grupo">
+                                <label for ="correo">Numero de teléfono</label>
+                                <input type="text" id="seccion" placeholder="ej:1111-1111">
+                            </div>
+
+                            <div class="grupo">
+                                <label for="jornada">Jornada</label>
+                                <select id="jornada">
+                                    <option value="">Seleccione una opcion</option>
+                                    <opcion value="Mañana">Mañana</opcion>
+                                    <opcion value="Tarde">Tarde</opcion>
+                                    <option value="Noche">Noche</option>
+                            </select>
+                        </div>
+
+                        <div class="fila">
+                            <div class ="grupo">
+                                <label for ="correo">Correo Electónico</label>
+                                <input type="text" id="seccion" placeholder="correo@email.com">
+                            </div>
+
+
+                
+                    </div>
+                </fieldset>
+
+            
+
+                <fieldset>
+                    <legend>2. Datos del Encargado</legend>
+
+                    <div class="fila">
+                        <div class="grupo">
+                            <label for="encargado">Nombre del Encargado</label>
+                            <Input type="text" id="encargado" placeholder="Nombre Completo">
+                        </div>
+
+                        <div class="grupo">
+                            <label for="parentesco">Parentesco:</label>
+                            <select id="parentesco">
+                                <option value="">Seleccione una opcion</option>
+                                <option value="Madre">Madre</option>
+                                <option value="Padre">Padre</option>
+                                <option value="Abuela/Abuelo">Abuela/Abuelo</option>
+                                <option value="Tia/tio">Tía/Tío</option>
+                                <option value="Encargado legal">Encargado legal</option>
+                                <option value="Otro">Otro</option>
+                            </select>
+                        </div>
+                    </div>
+
+                        <div class="fila">
+                            <div class="grupo">
+                                <label for="telefono">Teléfono:</label>
+                                <input type="tel" id="telefono" placeholder="Ejemplo: 8888-8888">
+                            </div>
+
+                            <div class="grupo">
+                                <label for="correo">Correo Electronico</label>
+                                <input type="email" id="correo" placeholder="ejemplo@.correo.com">
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>3. Detalle de la solicitud</legend>
+
+                        <div class="grupo">
+                            <label for="tipoSolicitud"> Tipo de solicitud:</label>
+                            <select id="TipoSolicitud">
+                                <option value="">Seleccione una opción:</option>
+                                <option value="Matricula">Matricula</option>
+                                <option value="Constancia">Solicitud de constancia</option>
+                                <option value="Justificacion de ausencia">Justificacion de ausencia</option>
+                                <option value="Apoyo educativo">Solicitud de apoyo educativo</option>
+                                <option value="Consulta de notas">Consulta de notas</option>
+                                <option value="reunion con docentes">Solicitud de reunion con docentes</option>
+                                <option value="Reunion con orientacion">Solicitud de reunion con orientacion</option>
+                            </select>
+                        </div>
+
+                        <div id="campoAusencia" class="oculto">
+                            <div class="fila">
+                                <div class="grupo">
+                                    <label for="fechaAusencia">Fecha de ausencia:</label>
+                                    <input type="date" id="fechaAusencia">
+                                </div>
+
+                                 <div class="grupo">
+                                    <label for="motivoAusencia">Motivo de Ausencia</label>
+                                    <input type="text" id="motivoAusencia" placeholder="Ejemplo: cita medica">
+                                </div>
+                             </div>
+                        </div>
+
+                        <div id="campoReunion" class="oculto">
+                            <div class="fila">
+                                <div class="grupo">
+                                    <label for="fechaReunion">Fecha sugerida:</label>
+                                    <input type="date" id="fechaReunion">
+                                </div>
+
+                                <div class="grupo">
+                                    <label for="horaReunion">Hora sugerida</label>
+                                    <input type="time" id="horaReunion">
+                            </div>
+                         </div>
+                    </div>
+
+                    <div id="campoApoyo" class="oculto">
+                            <div class="grupo">
+                                <label>Area en la que requiere apoyo:</label>
+
+                                <div class="opciones">
+                                    <label><input type="checkbox" value="Lectura">Lectura</label>
+                                    <label><input type="checkbox" value="Escritura">Escritura</label>
+                                    <label><input type="checkbox" value="Matematica">Matematicas</label>
+                                    <label><input type="checkbox" value="Conducta">Conducta</label>
+                                    <label><input type="checkbox" value="Atencion">Atencion</label>
+                                </div>
+                            </div>
+                         </div>
+                        
+                        <div class="grupo">
+                            <label for="urgencia">Nivel de urgencia</label>
+                            <select id="urgencia">
+                                <option value="">Selecciona una opción</option>
+                                <option value="Baja">Baja</option>
+                                <option value="Media">Media</option>
+                                <option value="Alta">Alta</option>
+                            </select>
+                        </div>
+
+                         <div class="grupo">
+                            <label for="detalle">Detalle de la Solicitud:</label>
+                            <textarea id="detalle" placeholder="Explique brevemente la Solicitud"></textarea>
+                         </div>
+
+                         <div class="grupo">
+                            <label for="archivo">Adjuntar documento:</label>
+                            <input type="file" id="archivo">   
+                         </div>
+
+                         <div class="grupo">
+                            <label>
+                                <input type="checkbox" id="autorización" class="check">
+                            Autorizo el uso de esta información para fines educativos y administrativos.
+                            </label>
+                        </div>
+                    
+        <div class="grupo">
+            <label>
+                <input type="checkbox" id="veracidad" class="check">
+                Declaro que la informacion brindada es verdadera.
+            </label>
+        </div>
+    </fieldset>
+ 
+        <div class="botones">
+          <button type="submit" class="btn-enviar">Enviar formulario</button>
+         <button type="reset" class="btn-limpiar">Limpiar formulario</button>
+     </div>
+
+     <div id="mensajeRespuesta" class="mensaje"></div>
+
+</form>
+
+    <div id="resumen" class="resumen">
+        <h3>Resumen de la solicitud enviada</h3>
+        <p id="datosResumen"></p>
+    </div>
+</div>
+   
+    <footer>
+         Instituto comunitario de Educacion © 2026
+    </footer>
+
+    <!--Llamado al archivo Javascript-->
+    <script scr="index.js"></script>
+    
+</body>
+</html>
